@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a post</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Create a post</h1>
+    <header id="topBar">
+        <h2 id="title" contenteditable>My-Post</h2>
+        <div class="btns">
+            <img src="assets/refresh.svg" alt="Icono de refrescar" width="25px" id="clearBtn">
+            <label for="colorBg" class="colorLabel" id="colorBgLabel">
+                <input type="color" class="color" id="colorBg">
+            </label>
+        </div>
+    </header>
+    <canvas></canvas>
+    <div class="bar">
+        <label for="colorText" class="colorLabel" id="colorTextLabel">
+            <input id="colorText" type="color" class="color">
+        </label>
+        <input type="text" id="valueText" placeholder="Hola desde el canvas!">
+        <button id="addText">Añadir texto</button>
+        <!-- TODO: Aumentar y disminuir tamaño de texto -->
+        <!-- <button id="minText">-</button>
+        <button id="plusText">+</button> -->
+    </div>
+
+    <button id="saveFile">Guardar post</button>
+</body>
+
+</html>
